@@ -13,6 +13,7 @@ export const Input = styled.input`
   border-radius: 8px;
   background: ${COLORS.GRAY_500};
   border: 1px solid ${COLORS.GRAY_700};
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 3.375rem;
   max-width: 39.875rem;
   flex: 1;
