@@ -1,7 +1,9 @@
 import { useState } from 'react'
+
 import Input from '../Input'
 
 import * as S from './styles'
+import iconClipboard from '../../assets/clipboard.svg'
 
 function TaskList() {
   const [tasks, setTasks] = useState([])
@@ -11,7 +13,7 @@ function TaskList() {
       <Input />
 
       <S.EmptyTasks>
-        <img src="" alt="" />
+        <S.EmptyIcon src={iconClipboard} alt="icon clipboard" />
 
         <S.EmptyMessage>
           <S.EmptyTitle>
@@ -27,4 +29,4 @@ function TaskList() {
   )
 }
 
-export default TaskList;
+export default TaskList

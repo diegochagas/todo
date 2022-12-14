@@ -18,10 +18,6 @@ export const Input = styled.input`
   flex: 1;
   color: ${COLORS.GRAY_100};
   font-size: ${FONT_SIZE.MEDIUM};
-
-  &:focus, &:active {
-    border: 1px solid ${COLORS.PURPLE};
-  }
 `
 
 export const Button = styled.button`
