@@ -1,11 +1,11 @@
-import * as S from './styles';
+import Icons from '../Icons'
 
-import rocket from '../../assets/rocket.svg'
+import * as S from './styles'
 
 const Header = () => {
   return (
     <S.Container>
-      <S.Logo src={rocket} />
+      <Icons name="rocket" />
 
       <S.Title>
         <S.LeftText>to</S.LeftText>

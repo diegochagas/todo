@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { COLORS, FONT_SIZE } from '../../styles/global';
 
 export const Container = styled.div`
@@ -9,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Input = styled.input`
-  padding: 1rem;
+  padding: 0 1rem;
   border-radius: 8px;
   background: ${COLORS.GRAY_500};
   border: 1px solid ${COLORS.GRAY_700};
@@ -34,11 +35,15 @@ export const Button = styled.button`
   justify-content: center;
   gap: .5rem;
   margin-left: .5rem;
+  transition: background-color .2s;
+
+  &:hover {
+    background: ${COLORS.BLUE};
+  }
 `
 
 export const Text = styled.span`
   color: ${COLORS.GRAY_100};
-  font-style: italic;
   font-weight: bold;
   font-size: ${FONT_SIZE.MEDIUM};
 `

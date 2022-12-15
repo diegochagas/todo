@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { COLORS } from './global'
+import { COLORS, FONT_SIZE } from './global'
 
 export default createGlobalStyle`
   * {
@@ -18,12 +18,12 @@ export default createGlobalStyle`
 
   body, input, textarea, button {
     font-family: 'Inter', sans-serif;
-    font-size: 0.75rem;
+    font-size: ${FONT_SIZE.DEFAULT};
     line-height: 140%;
   }
 
   :focus {
     outline: transparent;
-    box-shadow: 0 0 0 2px var(${COLORS.PURPLE});
+    box-shadow: 0 0 0 2px ${COLORS.PURPLE};
   }
 `

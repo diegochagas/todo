@@ -1,17 +1,34 @@
-import React from 'react';
+import { ChangeEvent, InputHTMLAttributes, useState } from 'react'
+
+import Icons from '../Icons';
 
 import * as S from './styles'
-import iconPlus from '../../assets/plus.svg'
 
-function Input() {
+interface Props extends InputHTMLAttributes<HTMLInputElement> {
+  onSubmitInput: (value: string) => void
+}
+
+function Input({ onSubmitInput, ...props }: Props) {
+  const [inputValue, setinputValue] = useState('')
+  
+  const handlerInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setinputValue(event.target.value)
+  }
+
+  const handlerInputSubmit = () => {
+    onSubmitInput(inputValue)
+
+    setinputValue('')
+  }
+
   return (
     <S.Container>
-      <S.Input placeholder="Add a new task" />
+      <S.Input value={inputValue} onChange={handlerInputChange} placeholder="Add a new task" {...props} />
 
-      <S.Button>
+      <S.Button onClick={handlerInputSubmit}>
         <S.Text>Criar</S.Text>
 
-        <img src={iconPlus} alt="icon-plus" />
+        <Icons name="plus" />
       </S.Button>
     </S.Container>
   );
