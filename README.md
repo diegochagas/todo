@@ -1,6 +1,6 @@
-# Todo
+# To Do
 
-Project build with React.js and Typescript
+Project of a todo list built with React.js and Typescript
 
 ## To run locally
 
