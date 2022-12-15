@@ -10,6 +10,9 @@ Execute on the main folder ```npm install``` and ```npm start```
 
 http://localhost:3000/
 
+## production url to acess the page
+https://diegochagas.com/todo
+
 ---
 
 # God be praised!
