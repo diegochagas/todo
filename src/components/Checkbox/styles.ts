@@ -6,7 +6,7 @@ export const Container = styled.label`
   display: flex;
 `
 
-export const InputRadio = styled.input.attrs({ type: 'checkbox' })`
+export const InputRadio = styled.input`
   opacity: 0;
   position: absolute;
 `

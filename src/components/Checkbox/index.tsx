@@ -27,7 +27,7 @@ function CheckBox({ value, updateCheckedItems = () => {}, checkedItems = [], ...
 
   return (
     <S.Container>
-      <S.InputRadio checked={isChecked} onChange={handlerInputChange} {...props}  />
+      <S.InputRadio type="checkbox" checked={isChecked} onChange={handlerInputChange} {...props}  />
 
       <S.RadioButton onClick={handlerRadioClick}>
         {isChecked ? <Icons name="checked" /> : <S.EmptyCheckBox />}
